@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# SoW React Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+Create a simple webpage using React and CSS, incorporating other CSS/JS libraries as needed. Fetch and display data from an external API while adhering to the provided design.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- React
+- CSS
+- JavaScript
+- External CSS/JS libraries (if needed)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Completion Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Functionality
 
-### `npm test`
+#### Must Have
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Fetch data from the provided external API.
+- Display the data according to the given design.
+- Implement a carousel element containing six images, where three are visible at a time on desktop.
 
-### `npm run build`
+#### Nice to Have
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Optimize the design for performance and accessibility.
+- Implement smooth transitions and animations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Guidelines to develop a project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Must Have
 
-### `npm run eject`
+- Ensure the design matches the Figma files exactly.
+- Implement a responsive layout for both desktop and mobile.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Nice to Have
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use a state management library if necessary.
+- Optimize the API call to handle loading and error states efficiently.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Submission Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Must Have
 
-## Learn More
+- Submit the project via a public GitHub repository: [GitHub Repo](https://github.com/akhilbhumireddy/sow-react-assessment.git)
+- Deploy the project and provide a live demo: [Deployment Link](https://akhils-sow.netlify.app/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Nice to Have
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Provide a README file explaining the setup and usage.
+- Include comments in the code for clarity.
 
-### Code Splitting
+## Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Design files
 
-### Analyzing the Bundle Size
+- **Desktop Preview:** [Figma Desktop Preview](https://www.figma.com/proto/pNYXRfq4EGYgtQwbFk4WVy/SoW----Test-4?node-id=1208%3A2&scaling=min-zoom&page-id=0%3A1)
+- **Mobile Preview:** [Figma Mobile Preview](https://www.figma.com/proto/pNYXRfq4EGYgtQwbFk4WVy/SoW----Test-4?node-id=1208%3A120&scaling=min-zoom&page-id=0%3A1)
+- **Full Design (Inspect Mode - Requires Login):** [Figma Design](https://www.figma.com/file/pNYXRfq4EGYgtQwbFk4WVy/SoW----Test-4?node-id=0%3A1)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### APIs
 
-### Making a Progressive Web App
+- **API Endpoint:** `https://devsow.wpengine.com/wp-json/communities/all/`
+- **Method:** `GET`
+- **Required Headers:**
+  ```
+  Authorization: Basic bmVoYTowI21JdkJCdzRBdWJoKTU5QXhEQ0hIQTU=
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Third-party packages
 
-### Advanced Configuration
+- React Carousel (for implementing the carousel component)
+- Axios or Fetch API (for API calls)
+- Any CSS libraries (if needed for styling)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
