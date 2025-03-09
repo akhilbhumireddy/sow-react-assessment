@@ -1,15 +1,38 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import ImageGrid from "./components/ImageGrid";
+import ImageCarousel from "./components/ImageCarousel";
+//import "./styles.css";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://devsow.wpengine.com/wp-json/communities/all/",
+          {
+            headers: {
+              Authorization: "Basic bmVoYTowI21JdkJCdzRBdWJoKTU5QXhEQ0hIQTU=",
+            },
+          }
+        );
+        setData(response.data.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+    <div className="container">
+      <ImageGrid data={data} />
+      <ImageCarousel data={data} />
+    </div>
   );
-}
+};
 
 export default App;
