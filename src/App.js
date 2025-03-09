@@ -24,7 +24,9 @@ const App = () => {
 
   return (
     <div className="container">
+      <h2 className="section-title">Communities We Manage</h2>
       <ImageGrid data={data} />
+      <h2 className="section-title">Our Services</h2>
       <ImageCarousel data={data} />
     </div>
   );

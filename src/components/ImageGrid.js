@@ -2,6 +2,10 @@ import React from "react";
 import "../App.css";
 
 const ImageGrid = ({ data }) => {
+  if (!Array.isArray(data)) {
+    console.error("Expected 'data' to be an array but received:", data);
+    return <p>Loading...</p>;
+  }
   return (
     <div className="grid">
       {data.slice(0, 6).map((item) => (
