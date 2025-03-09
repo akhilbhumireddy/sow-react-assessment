@@ -12,12 +12,7 @@ const App = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://devsow.wpengine.com/wp-json/communities/all/",
-          {
-            headers: {
-              Authorization: "Basic bmVoYTowI21JdkJCdzRBdWJoKTU5QXhEQ0hIQTU=",
-            },
-          }
+          "https://sow-backend-3.onrender.com/api/communities"
         );
         setData(response.data.data);
       } catch (error) {
